@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Torres Painting, your trusted house painting professionals in North Carolina. We specialize in high-quality residential and commercial painting services. Contact us for expert painting solutions that transform your space.">
+    <meta name="keywords" content="painting contractors, painters, North Carolina, residential painting, commercial painting, Torres Painting,Carthage,Seven Lakes,Aberdeen,Pinehurst,Southern Pines,Wsipering Pines,Sanford,Cameron">
+    <title>Torres Painting</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="image/logoSc.jpg" alt="Torres Painting Logo">
+        </a>
+      <nav class="navbar">
+    <a href="#home"><i class="fas fa-home"></i> Home</a>
+    <a href="#about"><i class="fas fa-users"></i> About Us</a>
+    <a href="#services"><i class="fas fa-paint-roller"></i> Services</a>
+    <a href="#contact"><i class="fas fa-address-book"></i> Contact</a>
+</nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Welcome to Torres Painting</h3>
+            <p>Welcome to Torres Painting, your go-to for professional house painting services. 
+                Whether you want to refresh your home's look or enhance its curb appeal, we’re here to bring your vision to life.</p>
+            <a href="#contact" class="btn">Request Our Services Now</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading"> <span>About</span> Us </h1>
+        <div class="row">
+            <div class="image">
+                <img src="image/logo.jpg" alt="About Us Image">
+            </div>
+            <div class="content">
+                <h3>About Torres Painting</h3>
+                <p>Torres Painting is a leading provider of residential painting services in our community. 
+                With a commitment to quality, professionalism, and customer satisfaction, we take pride in transforming homes and exceeding our clients' expectations.</p>
+                <h1>Our Mission</h1>
+                <p>Our mission at Torres Painting is simple: to deliver exceptional painting solutions that enhance the beauty and value of our clients' homes.
+                 We strive to provide personalized service, attention to detail, and superior craftsmanship on every project we undertake.</p> 
+                <h1>Our Values</h1>
+                <p>At Torres Painting, we are guided by a set of core values that shape our interactions with clients, partners, and each other.
+                     Integrity, excellence, and respect are the foundation of our business, and we uphold these principles in everything we do.</p> 
+                <h1>Our Team</h1>
+                <p>Our team consists of skilled professionals who are passionate about their craft and dedicated to delivering outstanding results. 
+                    With years of experience and a commitment to ongoing training and development, we ensure that every member of our team is equipped to handle any painting project with precision and expertise.</p> 
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="services" id="services">
+        <h1 class="heading"> Our <span>Services</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/interno.jpg" alt="Interior Painting">
+                <h3>Interior Painting</h3>
+                <p>High-quality interior painting to give your home a fresh look.</p>
+            </div>
+            <div class="box">
+                <img src="image/exodo.jpg" alt="Exterior Painting">
+                <h3>Exterior Painting</h3>
+                <p>Durable exterior painting to enhance your home's curb appeal.</p>
+            </div>
+            <div class="box">
+                <img src="image/resr.jpg" alt="Residential Painting">
+                <h3>Residential Painting</h3>
+                <p>Expert residential painting services for all types of homes.</p>
+            </div>
+            <div class="box">
+                <img src="image/cmpr.jpg" alt="Commercial Painting">
+                <h3>Commercial Painting</h3>
+                <p>Professional commercial painting services for businesses.</p>
+            </div>
+            <div class="box">
+                <img src="image/pres.jpg" alt="Pressure Washing">
+                <h3>Pressure Washing</h3>
+                <p>Effective pressure washing to clean and prepare surfaces.</p>
+            </div>
+            <div class="box">
+                <img src="image/rejr.jpg" alt="Paint Fences">
+                <h3>Paint Fences</h3>
+                <p>Quality painting services for fences to protect and beautify.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>contact</span> us </h1>
+        <div class="row">
+            <div class="map-container">
+                <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1oV2pmIadiUA-0gGoqoD8_PbUzvMdzGw&ehbc=2E312F&noprof=1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="map-overlay"></div>
+            </div>
+        <form action="https://formspree.io/f/mnneavdj" method="POST">
+                <h3>Get in Touch</h3>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-map-marker-alt"></span>
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+               <div class="inputBox" style="flex-direction: column; align-items: flex-start; padding: 0; border: none; background: none;">
+        <label for="service_combo" style="color: #fff; font-size: 1.5rem; margin-bottom: 0.5rem; padding-left: 2rem;">What Service Do You Need?</label>
+        
+        <select name="service_combo" id="service_combo" required onchange="toggleOtherServiceField()" style="width: 100%; padding: 1.5rem 2rem; font-size: 1.7rem; color: #fff; text-transform: none; background: var(--bg); border: var(--border); margin-top: 0.5rem;">
+            <option value="" disabled selected>-- Select Required Service --</option>
+            <option value="Pintura Residencial Exterior">Pintura Residencial Exterior</option>
+            <option value="Pintura Residencial Interior">Pintura Residencial Interior</option>
+            <option value="Pintura Comercial">Pintura Comercial</option>
+            <option value="Pressure Washing">Pressure Washing</option>
+            <option value="Otro">Otro (Please Specify)</option>
+        </select>
+    </div>
+
+    <div class="inputBox" id="other_service_container" style="display:none; margin-top: 1rem;">
+        <span class="fas fa-pen"></span>
+        <input type="text" name="other_service" id="other_service_field" placeholder="Specify the service you need">
+    </div>
+
+    <div class="inputBox" style="flex-direction: column; align-items: flex-start; padding: 0; border: none; background: none;">
+        <label for="message" style="color: #fff; font-size: 1.5rem; margin-bottom: 0.5rem; padding-left: 2rem;">Project Details / Message:</label>
+        <div class="inputBox" style="width: 100%; margin-top: 0.5rem;">
+            <span class="fas fa-comment"></span>
+            <textarea name="message" id="message" placeholder="Describe the job (colors, size, details)" required cols="30" rows="5"></textarea>
+        </div>
+    </div>
+    
+    <input type="submit" value="Contact Now" class="btn">
+    </form>
+        </div>
+    </section>
+
+
+<footer class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Contact Us</h3>
+            <a href="tel:555-555-5555"><i class="fas fa-phone"></i> +1 (910) 870-5613</a>
+            <a href="mailto:contact@torrespainting.com"><i class="fas fa-envelope"></i> Contact: torrespainting@gmail.com</a>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> North Carolina, USA</a>
+        </div>
+        
+        <div class="box">
+            <h3>Sections</h3>
+            <a href="#home"><i class="fas fa-arrow-right"></i> Home</a>
+            <a href="#about"><i class="fas fa-arrow-right"></i> About Us</a>
+            <a href="#services"><i class="fas fa-arrow-right"></i> Services</a>
+            <a href="#contact"><i class="fas fa-arrow-right"></i> Contact</a>
+        </div>
+        
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </div>
+    
+    <div class="credit">
+          © 2025 Torres Painting. All Rights Reserved. | Website by Carlos Emiliano
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

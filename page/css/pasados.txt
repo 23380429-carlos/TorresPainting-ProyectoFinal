@@ -1,0 +1,204 @@
+public class BurbujaIDI {
+
+    public static void main(String[] args) {
+        int[] arreglo = new int[]{5, 1, 2, 10, 4, 3, 12, 6, 8, 7, 0, 9};
+        int[] arreglo2 = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arreglo3 = new int[]{10, 9, 8, 7, 7, 5, 4, 3, 2, 1, 0};
+        int intercambios = 0;
+        int comparaciones = 0;
+        int temp;
+        System.out.println("Arreglo original:");
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.print(arreglo[i] + "     ");
+        }
+        System.out.println();
+        for (int i = 0; i < arreglo.length; i++) {
+            for (int j = 1; j < (arreglo.length - i); j++) {
+                comparaciones++;
+                if (arreglo[j - 1] > arreglo[j]) {
+                    intercambios++;
+                    temp = arreglo[j - 1];
+                    arreglo[j - 1] = arreglo[j];
+                    arreglo[j] = temp;
+                    for (int k = 0; k < arreglo.length; k++) {
+                        System.out.print(arreglo[k] + "     ");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+        System.out.println("Arreglo ordenado:");
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.print(arreglo[i] + "     ");
+        }
+        System.out.println("\nComparaciones: " + comparaciones);
+        System.out.println("Intercambios: " + intercambios);
+
+        //segunda prueba
+        int intercambios2 = 0;
+        int comparaciones2 = 0;
+        int temp2;
+        System.out.println("\nArreglo original:");
+        for (int i = 0; i < arreglo2.length; i++) {
+            System.out.print(arreglo2[i] + "     ");
+        }
+        System.out.println();
+        for (int i = 0; i < arreglo2.length; i++) {
+            for (int j = 1; j < (arreglo2.length - i); j++) {
+                comparaciones2++;
+                if (arreglo2[j - 1] > arreglo2[j]) {
+                    intercambios2++;
+                    temp2 = arreglo2[j - 1];
+                    arreglo2[j - 1] = arreglo2[j];
+                    arreglo2[j] = temp2;
+                    for (int k = 0; k < arreglo2.length; k++) {
+                        System.out.print(arreglo2[k] + "     ");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+        System.out.println("Arreglo ordenado:");
+        for (int i = 0; i < arreglo2.length; i++) {
+            System.out.print(arreglo2[i] + "     ");
+        }
+        System.out.println("\nComparaciones: " + comparaciones2);
+        System.out.println("Intercambios: " + intercambios2);
+
+        //prueba 3
+        int intercambios3 = 0;
+        int comparaciones3 = 0;
+        int temp3;
+        System.out.println("\nArreglo original:");
+        for (int i = 0; i < arreglo3.length; i++) {
+            System.out.print(arreglo3[i] + "     ");
+        }
+        System.out.println();
+        for (int i = 0; i < arreglo3.length; i++) {
+            for (int j = 1; j < (arreglo3.length - i); j++) {
+                comparaciones3++;
+                if (arreglo3[j - 1] > arreglo3[j]) {
+                    intercambios3++;
+                    temp3 = arreglo3[j - 1];
+                    arreglo3[j - 1] = arreglo3[j];
+                    arreglo3[j] = temp3;
+                    for (int k = 0; k < arreglo3.length; k++) {
+                        System.out.print(arreglo3[k] + "     ");
+                    }
+                    System.out.println();
+                }
+            }
+        }
+        System.out.println("Arreglo ordenado:");
+        for (int i = 0; i < arreglo3.length; i++) {
+            System.out.print(arreglo3[i] + "     ");
+        }
+        System.out.println("\nComparaciones: " + comparaciones3);
+        System.out.println("Intercambios: " + intercambios3);
+
+    }
+}
+
+IDS
+
+
+
+public class BurbujaIDS {
+
+    public static void main(String[] args) {
+        int intercambios = 0, comparaciones = 0;
+        int[] arreglo = new int[]{5, 1, 2, 10, 4, 3, 12, 6, 8, 7, 0, 9};
+        int[] arreglo2 = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int[] arreglo3 = new int[]{10, 9, 8, 7, 7, 5, 4, 3, 2, 1, 0};
+
+        int aux = 0, i = 0;
+        boolean band = false;
+
+        while (i < arreglo.length - 1 && band == false) {
+            band = true;
+            for (int j = 0; j < arreglo.length - i - 1; j++) {
+                comparaciones++;
+                if (arreglo[j] > arreglo[j + 1]) {
+                    intercambios++;
+                    aux = arreglo[j];
+                    arreglo[j] = arreglo[j + 1];
+                    arreglo[j + 1] = aux;
+                    band = false;
+                    for (int k = 0; k < arreglo.length; k++) {
+                        System.out.print(arreglo[k] + "     ");
+                    }
+                    System.out.println("");
+                }
+            }
+            i = i + 1;
+        }
+        System.out.println("\nArreglo ordenado:");
+        for (int k = 0; k < arreglo.length; k++) {
+            System.out.print(arreglo[k] + "     ");
+        }
+        System.out.println("\nNumero de intercambios:" + intercambios);
+        System.out.println("Numero de comparaciones:" + comparaciones);
+
+        //prueba 2
+        int intercambios2 = 0, comparaciones2 = 0;
+        int aux2 = 0, i2 = 0;
+        boolean band2 = false;
+
+        while (i2 < arreglo2.length - 1 && band2 == false) {
+            band2 = true;
+            for (int j = 0; j < arreglo2.length - i2 - 1; j++) {
+                comparaciones2++;
+                if (arreglo2[j] > arreglo2[j + 1]) {
+                    intercambios2++;
+                    aux2 = arreglo2[j];
+                    arreglo2[j] = arreglo2[j + 1];
+                    arreglo2[j + 1] = aux2;
+                    band2 = false;
+                    for (int k = 0; k < arreglo2.length; k++) {
+                        System.out.print(arreglo2[k] + "     ");
+                    }
+                    System.out.println("");
+                }
+            }
+            i2 = i2 + 1;
+        }
+        System.out.println("\nArreglo ordenado:");
+        for (int k = 0; k < arreglo2.length; k++) {
+            System.out.print(arreglo2[k] + "     ");
+        }
+        System.out.println("\nNumero de intercambios:" + intercambios2);
+        System.out.println("Numero de comparaciones:" + comparaciones2);
+
+        //prueba 3
+        int intercambios3 = 0, comparaciones3 = 0;
+        int aux3 = 0, i3 = 0;
+        boolean band3 = false;
+
+        while (i3 < arreglo3.length - 1 && band3 == false) {
+            band3 = true;
+            for (int j = 0; j < arreglo3.length - i3 - 1; j++) {
+                comparaciones3++;
+                if (arreglo3[j] > arreglo3[j + 1]) {
+                    intercambios3++;
+                    aux3 = arreglo3[j];
+                    arreglo3[j] = arreglo3[j + 1];
+                    arreglo3[j + 1] = aux3;
+                    band3 = false;
+                    for (int k = 0; k < arreglo3.length; k++) {
+                        System.out.print(arreglo3[k] + "     ");
+                    }
+                    System.out.println("");
+                }
+            }
+            i3 = i3 + 1;
+        }
+        System.out.println("\nArreglo ordenado:");
+        for (int k = 0; k < arreglo3.length; k++) {
+            System.out.print(arreglo3[k] + "     ");
+        }
+        System.out.println("\nNumero de intercambios:" + intercambios3);
+        System.out.println("Numero de comparaciones:" + comparaciones3);
+
+    }
+}
+
